@@ -1,10 +1,10 @@
 # Hiwonder-TurboPi-
-An autonomous TurboPi robot that follows curved lanes, avoids obstacles, and responds to traffic light colors — stopping on red, slowing on yellow, and going on green.
+An autonomous TurboPi robot that follows curved lanes, avoids obstacles, and responds to traffic light colors : stopping on red, slowing on yellow, and going on green.
 
 Features
-Lane following — stays within lane boundaries, including curves
-Obstacle avoidance — detects and avoids obstacles in real time
-Traffic light detection — recognizes light colors via camera
+Lane following: stays within lane boundaries, including curves
+Obstacle avoidance: detects and avoids obstacles in real time
+Traffic light detection: recognizes light colors via camera
 Red = stop
 Yellow = slow down
 Green = go
