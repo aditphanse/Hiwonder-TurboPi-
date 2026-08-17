@@ -1,5 +1,6 @@
-# Hiwonder-TurboPi-
-An autonomous TurboPi robot that follows curved lanes, avoids obstacles, and responds to traffic light colors : stopping on red, slowing on yellow, and going on green.
+TurboPi Autonomous Driving Robot
+
+An autonomous TurboPi robot that follows curved lanes, avoids obstacles, and responds to traffic light colors — stopping on red, slowing on yellow, and going on green.
 
 Features
 Lane following: stays within lane boundaries, including curves
@@ -28,12 +29,24 @@ Running the robot:
 
 Clone this repo onto your TurboPi's Raspberry Pi
 Install dependencies from requirements.txt
-Run the main script (python main.py)
+Run the main script (python src/main.py)
 Project Structure
-src — main code (main.py, lane_detection.py, obstacle_avoidance.py, traffic_light.py)
+src — main code
+main.py — final combined version (lane following + obstacle avoidance + traffic light detection)
+lane_and_obstacle.py — lane following + obstacle avoidance combined
+lane_detection.py — lane following only
+obstacle_avoidance.py — obstacle avoidance only
+traffic_light.py — traffic light detection only
 docs/images — photos and GIFs
 requirements.txt
 README.md
+Development Process
+
+This project was built incrementally, one capability at a time:
+
+Lane detection → added obstacle avoidance → added traffic light detection
+Each stage is kept separately in src/ for reference
+main.py contains the final combined version that runs all three together
 Known Limitations / Future Work
 Lane detection can struggle in low-light conditions
 Traffic light detection assumes consistent lighting/color calibration
